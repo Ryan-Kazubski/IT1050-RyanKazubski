@@ -6,7 +6,7 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World from Ryan Kazubski");
+            Console.WriteLine("Hello World from Ryan Kazubski!");
         }
     }
 }
