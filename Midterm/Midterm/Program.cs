@@ -6,51 +6,51 @@ namespace Midterm
     {
         static void Main(string[] args)
         {
-            Boolean keeplooping = true;
+            Boolean infiniteloop = true;
 
-            while (keeplooping == true)
+            while (infiniteloop == true)
             {
                 Console.WriteLine("0");
             }
 
-            int i = 2;
+            int num = 2;
 
-            while (i < 128)
+            while (num < 128)
             {
-                Console.WriteLine("[" + i + "]");
+                Console.WriteLine("[" + num + "]");
 
-                if (i == 64)
+                if (num == 64)
                 {
                     break;
                 }
-                i = i * 2;
+                num = num * 2;
             }
 
             Console.WriteLine("\n");
-            for (i = 49; i >= 1; --i)
+            for (num = 49; num >= 1; --num)
             {
 
-                Console.Write(i);
+                Console.Write(num);
 
-                if (i >= 2)
+                if (num >= 2)
                 {
                     Console.Write(",");
                 }
 
             }
 
-            i = 1;
+            num = 1;
 
             Console.WriteLine("\n");
 
-            while (i <= 21)
+            while (num <= 21)
             {
-                if (i % 2 == 1)
+                if (num % 2 == 1)
                 {
-                    Console.Write($"{i} ");
+                    Console.Write($"{num} ");
                 }
 
-                i = i + 1;
+                num = num + 1;
             }
 
             Console.WriteLine("\n");
@@ -65,42 +65,29 @@ namespace Midterm
 
             Console.WriteLine("\n");
 
-            int num = 5;
+            int pyrimad = 5;
 
             for (int k = 5; k >= 1; --k)
             {
-                for (int h = 5; h > num; h--)
+                for (int h = 5; h > pyrimad; h--)
                 {
                     Console.Write(" ");
                 }
-                for (int h = 1; h <= (num - 1); ++h)
+                for (int h = 1; h <= (pyrimad - 1); ++h)
                 {
                     Console.Write(h);
                 }
-                for (int h = 0; h < num; ++h)
+                for (int h = 0; h < pyrimad; ++h)
                 {
-                    Console.Write(num - h);
+                    Console.Write(pyrimad - h);
                 }
 
                 Console.WriteLine();
 
-                num = num - 1;
+                pyrimad = pyrimad - 1;
             }
 
-            /* What is the output for the following code ?
-                            What would the output be with the exact same code but using a while statement as opposed to
-                            a do -while?
-                            A : The do while loop only outputs a single “*” on the other hand the while loop doesn’t output
-                any because the value is already greater then N. The while loop will check the condition before executing the program and the do while
-                will execute the program then check the condition after
-                Explain how do we combine multiple Boolean values? 
-                Write an if statement that outputs “Let’s 
-                go outside!” when both Boolean values are false.
- A: You can also combine true/false values by 
-                using the Boolean operators, which take true/false values as operands and compute new 
-                true/false values
- 2. Identify and briefly describe 3 types of control structures that we can use to order the statements in our programs?
-                The three basic types of control structures are sequential, selection and iteration. They can be combined in any way to solve a specified problem.
+            /*2.) The three basic types of control structures are sequential, selection and iteration. They can be combined in any way to solve a specified problem.
                 Sequential is the default control structure, statements are executed line by line in the order in which they appear. The selection structure is 
                 used to test a condition. A sequence of statements is executed depending on whether or not the condition it true or false. This means the program 
                 chooses between two or more alternative paths. Condition refers to any expression or value that returns a Boolean value, meaning true or false.
@@ -110,6 +97,13 @@ namespace Midterm
                 or open-ended. "While," "do/while" and "for" loop are the three types of iteration statements. A loop can either be event controlled or counter 
                 controlled. An event-controlled loop executes a sequence of statements till and event occurs while a counter-controlled loop executes the statements a predetermined number of times.
 
+             * 7.) The do while loop only outputs a single “*” on the other hand the while loop doesn’t output
+                any because the value is already greater then N. The while loop will check the condition before executing the program and the do while
+                will execute the program then check the condition after
+
+               8.) You can also combine true/false values by 
+                using the Boolean operators, which take true/false values as operands and compute new 
+                true/false values
                 */
         }
     }
